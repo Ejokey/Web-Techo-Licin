@@ -1,0 +1,68 @@
+﻿{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Обратная связь - Cool Company</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'myapp/css/main.css' %}">
+</head>
+
+<body>
+
+    <div class="navbar">
+        <a href="{% url 'home' %}">Главная</a>
+        <a href="{% url 'feedback' %}">Оставить отзыв</a>
+    </div>
+
+    <section class="feedback-section">
+        <div class="container">
+            <h2>Обратная связь</h2>
+            <form class="form form-animated" onsubmit="return validateForm()">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" placeholder="Имя" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="E-mail" required>
+
+                <label for="message">Ваш отзыв:</label>
+                <textarea id="message" name="message" placeholder="Сообщение" required></textarea>
+
+                <button type="submit" class="btn-yellow">Оставить отзыв</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="sticky-footer">
+        <div class="bottom">
+            <div class="bottom_text">
+                <p>Всё на этом сайте защищено</p>
+                <p><span class="contact-icon">&#9742;</span> +7 (123) 456-7890</p>
+                <p><span class="contact-icon">&#9993;</span> info@example.com</p>
+            </div>
+        </div>
+    </footer>
+   
+    <script>
+        function validateForm() {
+            var emailInput = document.getElementById('email');
+            var emailValue = emailInput.value;
+    
+            if (!isValidEmail(emailValue)) {
+                alert('Введите корректный email.');
+                return false;
+            }
+    
+            return true;
+        }
+    
+        function isValidEmail(email) {
+            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return emailRegex.test(email);
+        }
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.js"></script>
+
+</body>
+
+</html>

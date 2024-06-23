@@ -1,0 +1,406 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.sticky-footer {
+position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.conteiner {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: rgb(83, 163, 255);
+    padding-top: 60px;
+    padding-bottom: 120px;
+    color: white;
+
+}
+
+.mraper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.offer {
+    width: 500px;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 40px;
+}
+
+.title_span {
+    font-size: 48px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.offer.text {
+    font-size: 14px;
+    width: 60%;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.Offer_img {
+    width: 40%;
+}
+
+button {
+    background-color: rgb(254, 213, 41);
+    color: black;
+    padding: 10px 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.form textarea {
+    margin-bottom: 10px;
+}
+
+.wish_title {
+    width: 100%;
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.wishes {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.wishes_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.wishes_item_content {
+    text-align: center;
+}
+
+.wishes_item p {
+    text-align: center;
+}
+
+main {
+    width: 100%;
+}
+
+.block {
+    width: 100%;
+
+    background-color: rgba(229, 239, 247, 0.767);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.form {
+	width: 300px; 
+	display: flex;
+	justify-content: center; 
+	flex-direction: column;
+        margin: 30px auto;
+}
+
+input {
+    width: 100%;
+    height: 30px;
+    margin: 15px auto;
+}
+
+.form_text {
+    text-align: center;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 40px;
+    text-transform: full-width;
+    font-weight: 700;
+    color: black;
+}
+
+.SSS {
+    background-color: yellow;
+    width: 306px;
+    height: 40px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.bottom {
+    width: 100%;
+    height: 15vh;
+    background-color: rgb(83, 163, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom_text {
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    margin-top: 50px;
+    font-size: 10px;
+    text-transform: full-width;
+    font-weight: 700;
+    color: white;
+}
+
+.animated-element {
+    animation: slideIn 1.5s ease-out;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.form-animated {
+    animation: fadeIn 1.5s ease-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.color-changing-text {
+    color: black;
+    transition: color 0.5s ease-in-out;
+}
+
+.color-changing-text:hover {
+    color: red;
+}
+
+.btn-yellow {
+    background-color: rgb(254, 213, 41);
+    color: black;
+    padding: 10px 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.btn-yellow:hover {
+    background-color: rgb(255, 183, 77);
+}
+
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.offer p {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+/* Стили для второй страницы */
+.feedback-section {
+    padding: 50px 0;
+}
+
+.feedback-section h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 767px) {
+    .conteiner {
+        width: 100%;
+    }
+
+    .header {
+        padding-top: 30px;
+        padding-bottom: 60px;
+    }
+
+    .offer {
+        width: 100%;
+        text-align: center;
+    }
+
+    .title {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .title_span {
+        font-size: 36px;
+    }
+
+    .Offer_img {
+        width: 100%;
+    }
+
+    .wishes {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .wishes_item {
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .block {
+        text-align: center;
+    }
+
+    .form {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .conteiner {
+        width: 100%;
+    }
+
+    .header {
+        padding-top: 40px;
+        padding-bottom: 80px;
+    }
+
+    .offer {
+        width: 100%;
+        text-align: center;
+    }
+
+    .title {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .title_span {
+        font-size: 42px;
+    }
+
+    .Offer_img {
+        width: 100%;
+    }
+
+    .wishes {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .wishes_item {
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .block {
+        text-align: center;
+    }
+
+    .form {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .conteiner {
+        width: 1024px;
+    }
+
+    .header {
+        padding-top: 60px;
+        padding-bottom: 120px;
+    }
+
+    .offer {
+        width: 500px;
+        text-align: left;
+    }
+
+    .title {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .title_span {
+        font-size: 48px;
+    }
+
+    .Offer_img {
+        width: 40%;
+    }
+
+    .wishes {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .wishes_item {
+        width: 30%;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .block {
+        text-align: center;
+    }
+
+    .form {
+        width: 300px;
+    }
+}
+

@@ -1,0 +1,106 @@
+﻿{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <div class="navbar">
+        <a href="{% url 'home' %}">Главная</a>
+        <a href="{% url 'feedback' %}">Оставить отзыв</a>
+    </div>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool Company</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'myapp/css/main.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="conteiner">
+            <img class="logo" src="{% static 'myapp/img/logo.png' %}" alt="">
+            <div class="mraper">
+                <div class="offer">
+                    <h1 class="title animated-element">
+                        УРАЛЬСКИЙ ЦЕНТР СТАЖИРОВОК <br>
+                    </h1>
+                    <p class="title_text">
+                        <ul>
+                            <li>Студентам помогает получить первый опыт в профессии, найти стажировку и работу;</li>
+                            <li>Компаниям помогает подбирать стажёров;</li>
+                            <li>Учебным заведениям организует эффективную практическую подготовку учащихся.</li>
+                        </ul>
+                    </p>
+                    <button class="btn-yellow animate__animated animate__bounce animate__slow">
+                        <a href="https://vk.com/uralintern" target="_blank" rel="noopener noreferrer">
+                            Узнать больше...
+                        </a>
+                    </button>
+                    
+                </div>
+                <img class="Offer_img animate__animated animate__fadeIn" src="{% static 'myapp/img/header-img.png' %}" alt="">
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="conteiner">
+            <div class="wish_title">
+                НАШИ УСПЕХИ</div>
+
+            <div class="wishes">
+                <div class="wishes_item">
+                    <div class="wishes_item_content">
+                    <img src="{% static 'myapp/img/f3.png' %}" alt="">
+                    <h3>101 СТУДЕНТ</h3>
+                    <p>Прошёл студенческие практики</p>
+                    </div>
+                </div>
+                <div class="wishes_item">
+                    <img src="{% static 'myapp/img/f4.png' %}" alt="">
+                    <div class="wishes_item_content">
+                    <h3>39 СТУДЕНТОВ</h3>
+                    <p>Устроено на стажировки</p>
+                    </div>
+                </div>
+                <div class="wishes_item">
+                    <img src="{% static 'myapp/img/f5.png' %}" alt="">
+                    <div class="wishes_item_content">
+                    <h3>36 СТУДЕНТОВ</h3>
+                    <p>Трудоустроены</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="block">
+        <div class="conteiner">
+            <div class="form_text">Форма заказа обратного звонка</div>
+            <form class="form form-animated">
+                <input type="text" placeholder="Имя">
+                <input type="text" placeholder="E-mail">
+                <input type="text" placeholder="Телефон">
+                <input type="text" placeholder="Что вы хотели бы обсудить на звонке?">
+                <button class="btn-yellow animate__animated animate__bounce">Отправить запрос!</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="bottom">
+            <div class="bottom_text">
+                <p>Всё на этом сайте защищено</p>
+                <p><span class="contact-icon">&#9742;</span> +7 (123) 456-7890</p>
+                <p><span class="contact-icon">&#9993;</span> info@example.com</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.js"></script>
+</body>
+
+</html>
